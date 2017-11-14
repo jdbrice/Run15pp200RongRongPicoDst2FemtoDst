@@ -128,7 +128,8 @@ Int_t FemtoDstWriter::Make()
 	this->_fmtEvent.mRunId    = this->_StPicoEvent->runId();
 	this->_fmtEvent.mEventId  = this->_StPicoEvent->eventId();
 	this->_fmtEvent.mGRefMult = this->_StPicoEvent->grefMult();
-	this->_fmtEvent.mBin16    = this->_StPicoEvent->refMult();
+	this->_fmtEvent.mPsi2     = this->_StPicoEvent->refMult();
+	this->_fmtEvent.mWeight   = this->_StPicoEvent->vzVpd();
 
 	this->_fmtEvent.vertex( this->_StPicoEvent->primaryVertex().x(), this->_StPicoEvent->primaryVertex().y(), this->_StPicoEvent->primaryVertex().z() );
 
